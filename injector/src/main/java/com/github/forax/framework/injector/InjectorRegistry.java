@@ -9,10 +9,31 @@ import java.util.*;
 import java.util.function.Supplier;
 
 public final class InjectorRegistry {
-    // private final HashMap<Class<?>, Object> registry = new HashMap<>();
+    //private final HashMap<Class<?>, Object> registry = new HashMap<>();
     private final HashMap<Class<?>, Supplier<?>> registry = new HashMap<>();
+
     /*
-    // Q3)_
+    Q1°
+    public void registerInstance(Class<?> type, Object instance) {
+        Objects.requireNonNull(type);
+        Objects.requireNonNull(instance);
+        var existing = registry.putIfAbsent(type, instance);
+        if (existing != null) {
+            throw new IllegalStateException("there is an already registred recipe for " + type.getName());
+        }
+    }
+
+    public Object lookupInstance(Class<?> type) {
+        var instance = registry.get(type);
+        if (instance == null) {
+            throw new IllegalArgumentException("there is no receipe for " + type.getName());
+        }
+        return instance;
+    }
+     */
+
+    /*
+    // Q2)_
     public <T> void registerInstance(Class<T> type, T instance) {
         Objects.requireNonNull(type);
         Objects.requireNonNull(instance);
@@ -23,14 +44,17 @@ public final class InjectorRegistry {
     }
      */
 
+    //Q3
     public <T> void registerInstance(Class<T> type, T instance) {
         Objects.requireNonNull(type);
         Objects.requireNonNull(instance);
         registerProvider(type, () -> instance);
     }
 
+
+
     /*
-    Q3)
+    Q2)
     public <T> T lookupInstance(Class<T> type) {
         var instance = registry.get(type);
         if (instance == null) {
@@ -40,6 +64,8 @@ public final class InjectorRegistry {
     }
      */
 
+
+    //Q3
     public <T> T lookupInstance(Class<T> type) {
         var supplier = registry.get(type);
         if (supplier == null) {
@@ -47,6 +73,8 @@ public final class InjectorRegistry {
         }
         return type.cast(supplier.get());
     }
+
+
 
     public <T> void registerProvider(Class<T> type, Supplier<T> supplier) {
         Objects.requireNonNull(type);
@@ -69,7 +97,7 @@ public final class InjectorRegistry {
     }
 
     /*
-    Q6)
+    Q5)
     public <T> void registerProviderClass(Class<T> type, Class<? extends T> providerClass) {
         Objects.requireNonNull(type);
         Objects.requireNonNull(providerClass);
