@@ -90,7 +90,11 @@ public final class InterceptorRegistry {
 
     List<Interceptor> findInterceptors(Method method) {
         Objects.requireNonNull(method);
-        return Arrays.stream(method.getAnnotations())
+        return Stream.of(
+                Arrays.stream(method.getDeclaringClass().getAnnotations()),
+                Arrays.stream(method.getAnnotations()),
+                Arrays.stream(method.getParameterAnnotations()).flatMap(Arrays::stream))
+                .flatMap(s -> s)
                 .flatMap(annotation -> interceptorMap.getOrDefault(annotation.annotationType(), List.of()).stream())
                 .toList();
     }
