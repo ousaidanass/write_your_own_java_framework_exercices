@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings("static-method")
 public class ORMTest {
-  /*
   @Nested
   public class Q1 {
     @Test @Tag("Q1")
@@ -82,7 +81,6 @@ public class ORMTest {
       );
     }
   }
-
 
   @Nested
   public class Q2 {
@@ -206,7 +204,6 @@ public class ORMTest {
   public static final class EmptyBean {
     public EmptyBean() { }
   }
-
 
   @Nested
   public class Q3 {
@@ -593,7 +590,6 @@ public class ORMTest {
     }
   }
 
-
   @Nested
   public class Q6 {
     @Test @Tag("Q6")
@@ -766,15 +762,19 @@ public class ORMTest {
     }
   }
 
-
   @Nested
   class Q8 {
-
+    @Test @Tag("Q8")
+    public void testFindId() {
+      var beanInfo = Utils.beanInfo(Person.class);
+      var property = ORM.findId(beanInfo);
+      assertEquals("id", property.getName());
+    }
     @Test @Tag("Q8")
     public void testCreateSaveQuery() {
       var beanInfo = Utils.beanInfo(Person.class);
       var sqlQuery = ORM.createSaveQuery("PERSON", beanInfo);
-      assertTrue(sqlQuery.endsWith("INTO PERSON (id, name) VALUES (?, ?);"));
+      assertTrue(sqlQuery.endsWith("INTO PERSON (ID, NAME) VALUES (?, ?);"));
     }
 
     @Test @Tag("Q8")
@@ -788,8 +788,12 @@ public class ORMTest {
         ORM.createTable(Person.class);
         var connection = ORM.currentConnection();
         var beanInfo = Utils.beanInfo(Person.class);
+        var idProperty = Arrays.stream(beanInfo.getPropertyDescriptors())
+                .filter(property -> property.getName().equals("id"))
+                .findFirst()
+                .orElseThrow();
         var bean = new Person(1L, "Ana");
-        ORM.save(connection, "PERSON", beanInfo, bean, null);
+        ORM.save(connection, "PERSON", beanInfo, bean, idProperty);
         var all = repository.findAll();
         assertEquals(List.of(new Person(1L, "Ana")), all);
       });
@@ -992,13 +996,6 @@ public class ORMTest {
     public static final class NoId { }
 
     @Test @Tag("Q11")
-    public void testFindId() {
-      var beanInfo = Utils.beanInfo(Person.class);
-      var property = ORM.findId(beanInfo);
-      assertEquals("id", property.getName());
-    }
-
-    @Test @Tag("Q11")
     public void testFindById() throws SQLException {
       interface PersonRepository extends Repository<Person, Long> {}
 
@@ -1033,7 +1030,7 @@ public class ORMTest {
     @Test @Tag("Q11")
     public void testFindNoId() {
       var beanInfo = Utils.beanInfo(NoId.class);
-      assertNull(ORM.findId(beanInfo));
+      assertThrows(IllegalStateException.class, () -> ORM.findId(beanInfo));
     }
 
     @Test @Tag("Q11")
@@ -1049,7 +1046,6 @@ public class ORMTest {
       });
     }
   }
-
 
   @Nested
   public class Q12 {
@@ -1262,7 +1258,5 @@ public class ORMTest {
             });
       });
     }
-
   }
-  */
 }

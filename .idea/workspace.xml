@@ -5,10 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="update IntelliJ files">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interceptor/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interceptor/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interceptor/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interceptor/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interceptor/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper/Anass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/test/java/com/github/forax/framework/mapper/JSONReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/test/java/com/github/forax/framework/mapper/JSONReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/write_your_own_java_framework_exercices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/InjectorRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/InjectorRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/InjectorRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/InjectorRegistryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interceptor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/interceptor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interceptor/src/main/java/org/github/forax/framework/interceptor/InterceptorRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/interceptor/src/main/java/org/github/forax/framework/interceptor/InterceptorRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interceptor/src/test/java/org/github/forax/framework/interceptor/InterceptorRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/interceptor/src/test/java/org/github/forax/framework/interceptor/InterceptorRegistryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper/JSONWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/test/java/com/github/forax/framework/mapper/JSONWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/test/java/com/github/forax/framework/mapper/JSONWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/com/github/forax/framework/orm/ORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/com/github/forax/framework/orm/ORM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/test/java/com/github/forax/framework/orm/ORMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/test/java/com/github/forax/framework/orm/ORMTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +73,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+        &quot;associatedIndex&quot;: 8
+        }</component>
   <component name="ProjectId" id="1z3S0SHERWbIdD5Lf6CT5zlczbJ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +89,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/forax/git/write_your_own_java_framework_exercices/interceptor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,7 +99,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -167,8 +211,23 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-2446afba0262-c7b3bf25" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="update IntelliJ files" />
+      <created>1698754350508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698754350508</updated>
+      <workItem from="1698754352514" duration="418000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
